@@ -52,7 +52,7 @@ export async function loadImages() {
             }
             return Promise.all(
                 arr.map(async (v, index) => {
-                    const src = require(`./nvqiang-1_frame_${v}.png`)
+                    const src = require(`./image/nvqiang-1_frame_${v}.png`)
                     const img = await loadImg(src)
                     imgSet[key][index] = img
                 })
