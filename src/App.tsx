@@ -1,15 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'assets/style/reset.css'
+import 'assets/style/common.css'
+import 'assets/style/global.less'
 
-import Game from './game'
+// import 'assets/fonts/iconfont'
 
-function App() {
-  return (
-    <div className="App">
-      <Game/>
-    </div>
-  );
-}
+import { Layout } from "layout";
 
-export default App;
+export default Layout

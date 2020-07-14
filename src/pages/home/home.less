@@ -1,0 +1,55 @@
+.home {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: 200px auto 80px;
+    grid-template-areas:
+        '. header .'
+        '. menu .'
+        '. . footer';
+
+    .header {
+        grid-column-start: header-start;
+        grid-column-end: header-end;
+        justify-self: center; // todo grid 嵌套
+        align-self: center;
+    }
+    .menu {
+        grid-column-start: menu-start;
+        grid-column-end: menu-end;
+        grid-row-start: menu-start;
+        grid-row-end: menu-end;
+    }
+
+    .footer {
+        grid-column-start: footer-start;
+        grid-column-end: footer-end;
+        grid-row-start: footer-start;
+        grid-row-end: footer-end;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+.header {
+    cursor: default;
+}
+
+.menu {
+    .menu-item {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+        // color:
+        // todo 动画
+        &:hover {
+            background-color: #00c !important;
+            color: #f00;
+        }
+    }
+}
+
+.version {
+    cursor: default;
+}
