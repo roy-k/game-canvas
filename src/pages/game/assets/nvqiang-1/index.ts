@@ -38,7 +38,7 @@ export const imgArrMap = {
     // todo 默认动作集
 }
 
-type ImgSet = {
+export type ImgSet = {
     [props: string]: HTMLImageElement[] // key 需要约束一下
 }
 export async function loadImages() {
